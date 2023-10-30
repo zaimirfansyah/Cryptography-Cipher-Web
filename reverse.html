@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Cipher Encryption & Decryption</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-green-500 to-blue-600 min-h-screen flex flex-col justify-center items-center">
+    <div class="container mx-auto p-4 bg-white bg-opacity-70 rounded-md md:w-1/2 lg:w-1/3 xl:w-1/4">
+        <h1 class="text-2xl font-semibold mb-4 text-center text-green-600">Reverse Cipher Encryption & Decryption</h1>
+        <form class="mb-4">
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Enter Message:</label>
+                <input type="text" id="message" name="message" class="block w-full mt-1 border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+            </div>
+            
+            <div class="mb-4">
+                <label for="action" class="block text-sm font-medium text-gray-700">Select Action:</label>
+                <select id="action" name="action" class="block w-full mt-1 border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+            </div>
+            
+            <button type="button" onclick="process()" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-md w-full">
+                Execute
+            </button>
+        </form>
+        <div id="output" class="mt-8 p-4 bg-indigo-100 text-indigo-900 rounded-md">
+   	<p id="result" class="text-2xl font-semibold"></p>
+	</div>
+
+    </div>
+<script src="algo2.js"></script>
+</body>
+</html>
